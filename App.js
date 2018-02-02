@@ -1,13 +1,20 @@
 import React, { Component } from 'react';
-import { AppRegistry, Image } from 'react-native';
+import { AppRegistry, Image, Text, View } from 'react-native';
 
-export default class TastyFoods extends Component {
+class Greeting extends Component {
   render() {
-    let picture = {
-      uri:
-        'https://lh6.googleusercontent.com/1db5oGNBot28BkzNpoeC5h2hI5DJzkWp3QMgGaEqqN6XaUBvEQm8ToE5-hajSoIRVEpZUPNc7NgrUk4=w3000-h1738-rw',
-    };
+    return <Text>Hello there {this.props.name}</Text>;
+  }
+}
 
-    return <Image source={picture} style={{ width: 300, height: 250 }} />;
+export default class CuteGreetings extends Component {
+  render() {
+    return (
+      <View style={{ alignItems: 'center' }}>
+        <Greeting name="Kate" />
+        <Greeting name="Boo" />
+        <Greeting name="Panda" />
+      </View>
+    );
   }
 }
