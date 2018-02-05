@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import { AppRegistry, Image, Text, View } from 'react-native';
 
-class Greeting extends Component {
-  render() {
-    return <Text>Hello there {this.props.name}</Text>;
-  }
-}
+import { Greeting } from './components/Greeting';
+import { GalleryImages } from './components/GalleryImages';
 
 export default class CuteGreetings extends Component {
   render() {
@@ -14,6 +11,7 @@ export default class CuteGreetings extends Component {
         <Greeting name="Kate" />
         <Greeting name="Boo" />
         <Greeting name="Panda" />
+        <GalleryImages />
       </View>
     );
   }

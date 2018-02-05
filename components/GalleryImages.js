@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { AppRegistry, Image } from 'react-native';
-import CuteImages from '';
 
-export default class CuteImages extends Component {
+export class GalleryImages extends Component {
   render() {
     let picture = {
       uri:
